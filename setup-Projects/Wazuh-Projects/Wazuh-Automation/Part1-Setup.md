@@ -27,15 +27,16 @@ Installing the-hive project through this link https://hive.apache.org/docs/lates
 ` nano /etc/cassandra/cassandra.yaml`
 
 Choose your **cluster_name: “ Project”**
-Press enter or click to view image in full size
+<p align="center">     <img src="./images/part1-setup-1.webp" width="500" height="500" /> </p>
 
 Put the **listen_address:** your public address.
+<p align="center">     <img src="./images/part1-setup-2.webp" width="500" height="500" /> </p>
 
 Put the **RPC_address**: Your public address.
-Press enter or click to view image in full size
+<p align="center">     <img src="./images/part1-setup-3.webp" width="500" height="500" /> </p>
 
 Put the **seeds**: “your public ip address:7000”
-Press enter or click to view image in full size
+<p align="center">     <img src="./images/part1-setup-4.webp" width="500" height="500" /> </p>
 
 then save and exit.
 ```
@@ -50,20 +51,21 @@ systemctl status cassandra.service    //to make user the service is acitve
 
 remove the hashtag and use your cluster.name.
 
-Press enter or click to view image in full size
+<p align="center">     <img src="./images/part1-setup-5.webp" width="500" height="500" /> </p>
 
 do the same thing with node.name
-Press enter or click to view image in full size
+<p align="center">     <img src="./images/part1-setup-6.webp" width="500" height="500" /> </p>
 
 same with network.host (your public IP address)
 
-Press enter or click to view image in full size
+<p align="center">     <img src="./images/part1-setup-7.webp" width="500" height="500" /> </p>
 remove the hashtag from http.port
-Press enter or click to view image in full size
+<p align="center">     <img src="./images/part1-setup-8.webp" width="500" height="500" /> </p>
 
 To start elastic-search you either need an initial cluster or discovery seed , we will use initial cluster and to scale out the elastic-search we will need discovery seed but we will not need that in this project. and remove the second node cause we need only one.
 
-Press enter or click to view image in full size
+<p align="center">     <img src="./images/part1-setup-9.webp" width="500" height="500" /> </p>
+
 ```
 systemctl start elasticsearch
 systemctl enable elasticsearch
@@ -81,11 +83,11 @@ now we can go to configure the configuration file for the hive
 
 we will put the public IP address in host-name as in the photo and also the cluster-name put it like the Cassandra cluster name.
 
-Press enter or click to view image in full size
+<p align="center">     <img src="./images/part1-setup-10.webp" width="500" height="500" /> </p>
 
 For the application.baseUrl ,put your public IP address and the port ,you want to access the hive with
 
-Press enter or click to view image in full size
+<p align="center">     <img src="./images/part1-setup-11.webp" width="500" height="500" /> </p>
 
 then save and exit.
 ```
@@ -100,8 +102,8 @@ default credential:
     username: admin@thehive.local
     pass: secret
 
-Press enter or click to view image in full size
-Press enter or click to view image in full size
+<p align="center">     <img src="./images/part1-setup-12.webp" width="500" height="500" /> </p>
+<p align="center">     <img src="./images/part1-setup-13.webp" width="500" height="500" /> </p>
 
 ## Configuring the agent in windows 10:
 
@@ -123,11 +125,11 @@ take the admin pass and the wazuh api user pass.
 
 use admin and the admin pass to log into the wazuh server using this website. `https://yourpublic-IP`.
 
-Press enter or click to view image in full size
+<p align="center">     <img src="./images/part1-setup-14.webp" width="500" height="500" /> </p>
 
 go to menu > server Managament > Endpoint Summary
 
-Press enter or click to view image in full size
+<p align="center">     <img src="./images/part1-setup-15.webp" width="500" height="500" /> </p>
 
 press deploy new agent
 
@@ -140,7 +142,7 @@ remember
 - You will need administrator privileges to perform this installation.
 - PowerShell 3.0 or greater is required.
 
-Press enter or click to view image in full size
+<p align="center">     <img src="./images/part1-setup-16.webp" width="500" height="500" /> </p>
 
 then execute this command:
 
@@ -163,10 +165,10 @@ execute the command and then execute
 
 `NET START WazuhSvc`
 
-Press enter or click to view image in full size
+<p align="center">     <img src="./images/part1-setup-17.webp" width="500" height="500" /> </p>
 
 then check the server :
 
-Press enter or click to view image in full size
+<p align="center">     <img src="./images/part1-setup-18.webp" width="500" height="500" /> </p>
 
 now every thing configured .
