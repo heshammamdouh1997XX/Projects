@@ -5,4 +5,4 @@ My Projects
 <img src="Projects-image.jpg" width="500" height="500"  />
 </p>
 
-style="max-width: 50%;
+
