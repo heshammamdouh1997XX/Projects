@@ -113,21 +113,21 @@ A system access control list (SACL) enables administrators to log attempts to ac
 
 It’s necessary to have a **Success** entry in the Auditing tab:
 <p align="center">
-    <img src="./images/Wazuh FIM-13.webp" width="500" height="500" />
+    <img src="./images/Wazuh FIM-14.webp" width="500" height="500" />
 </p>
 
 if no , press **add** > **select principle** then press **check names**
 <p align="center">
-    <img src="./images/Wazuh FIM-14.webp" width="500" height="500" />
+    <img src="./images/Wazuh FIM-15.webp" width="500" height="500" />
 </p>
 press show advanced permissions and mark like the photo.
 <p align="center">
-    <img src="./images/Wazuh FIM-15.webp" width="500" height="500" />
+    <img src="./images/Wazuh FIM-16.webp" width="500" height="500" />
 </p>
 
 tell you see success or if you have it from the beginning then you don’t need to change the permission .
 <p align="center">
-    <img src="./images/Wazuh FIM-16.webp" width="500" height="500" />
+    <img src="./images/Wazuh FIM-17.webp" width="500" height="500" />
 </p>
 
 then restart the service again.
@@ -141,7 +141,7 @@ I created a file and modified it .
 
 Now ,we got the changed text in the file in the first photo. and and auditing details in the second photo.
 <p align="center">
-    <img src="./images/Wazuh FIM-17.webp" width="500" height="500" />
+    <img src="./images/Wazuh FIM-18-1.webp" width="500" height="500" />
 </p>
 the changing in the text
 <p align="center">
