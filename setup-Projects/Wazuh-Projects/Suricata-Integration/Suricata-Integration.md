@@ -26,6 +26,11 @@ sudo systemctl stop suricata
 ## Configure Suricata
 `sudo nano /etc/suricata/suricata.yaml`
 
+### configure the ip address
+<p align="center">
+    <img src="./images/config-1.png" width="750" height="750" />
+</p>
+
 
 
 ## Signatures
