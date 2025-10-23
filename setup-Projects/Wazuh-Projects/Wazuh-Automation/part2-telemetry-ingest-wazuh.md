@@ -12,7 +12,7 @@ if you couldn't find it >> then go to manage settings
 go down you will find it.
 <p align="center">     <img src="./images/part2-telemetry-3.webp" width="500" height="500" /> </p>
 select add an exclusion >directory > choose downloads directory 
-<p align="center">     <img src="./images/part2-telemetry-4.webp" width="500" height="500" /> </p>
+<p align="center">     <img src="./images/part2-telemetry-4.webp" width="300" height="300" /> </p>
 open mcrosoft edge > settings search for security and disable microsoft defender smart screen
 <p align="center">     <img src="./images/part2-telemetry-5.webp" width="500" height="500" /> </p>
 download mimikatz zip file
@@ -25,7 +25,7 @@ open powershell in this directory then open it
 in wazuh server, we can't find mimikatz so
 - we need sysmon logs 
 - and to enable wazuh server to log everything
-<p align="center">     <img src="./images/part2-telemetry-9.webp" width="500" height="500" /> </p>
+<p align="center">     <img src="./images/part2-telemetry-9.webp" width="750" height="750" /> </p>
 so to the file down below with admin privilege
 
 `notepad.exe C:\Program files (x86)\ossec-agent\ossec.conf`
@@ -37,9 +37,9 @@ in log analysis remove the text down below.
 <p align="center">     <img src="./images/part2-telemetry-11.webp" width="500" height="500" /> </p>
 and we need to focus on sysmon for this project.
 download sysmon and then enable it
-<p align="center">     <img src="./images/part2-telemetry-12.webp" width="250" height="500" /> </p>
+<p align="center">     <img src="./images/part2-telemetry-12.webp" width="500" height="500" /> </p>
 and to find sysmon name you need to open event viewer
-<p align="center">     <img src="./images/part2-telemetry-13.webp" width="500" height="500" /> </p>
+<p align="center">     <img src="./images/part2-telemetry-13.webp" width="250" height="500" /> </p>
 then go down till you see sysmon open the file and click left-click then choose properties to get the real place
 
 <p align="center">     <img src="./images/part2-telemetry-14.webp" width="500" height="500" /> </p>
@@ -96,7 +96,7 @@ look at the server again.
 now we can search for mimikatiz in our dashboard if you couldn't find it , you need to be patient. 
 
 ## in the server website
-<p align="center">     <img src="./images/part2-telemetry-29.webp" width="500" height="500" /> </p>
+<p align="center">     <img src="./images/part2-telemetry-29.webp" width="750" height="750" /> </p>
 we got it now we have 2 events we will check the original file name and the file creation event id (1) cause that will help us to trigger the alert.
 <p align="center">     <img src="./images/part2-telemetry-30.webp" width="500" height="500" /> </p>
 - **Tip: even the attacker rename mimikatz the original-file-name,it will be the same. if you focus on the image, then the attacker can rename the file and you will lose the detection.**
@@ -126,7 +126,7 @@ we are ready now…
 <p align="center">     <img src="./images/part2-telemetry-36.webp" width="100" height="100" /> </p>
 
 lets rename mimikatz and run it .
-<p align="center">     <img src="./images/part2-telemetry-37.webp" width="500" height="500" /> </p>
+<p align="center">     <img src="./images/part2-telemetry-37.webp" width="100" height="100" /> </p>
 <p align="center">     <img src="./images/part2-telemetry-38.webp" width="500" height="500" /> </p>
 refresh the server website page 
 <p align="center">     <img src="./images/part2-telemetry-39.webp" width="500" height="500" /> </p>
