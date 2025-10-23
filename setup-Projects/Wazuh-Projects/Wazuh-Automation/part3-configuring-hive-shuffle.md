@@ -25,6 +25,7 @@ lets go to 
 `nano /var/ossec/etc/ossec.conf`
 then paste it after the global conf.
 <p align="center">     <img src="./images/part3-conf-hive-shuff-7.webp" width="500" height="500"  /> </p>
+
 ```
   <integration>
     <name>shuffle</name>
@@ -34,6 +35,7 @@ then paste it after the global conf.
   </integration>
 ```
 **tip : after your http-url in the intigration put space and make sure hook_url is white. and also focus with the spaces if you don't know you can see the tags like global or alerts and do the same spaces.**
+
 <level> => will make you send all the level 5 to shuffle but we need specefic id to trigger just the mimikatz so we will change it.
 we will use rule_id
 <p align="center">     <img src="./images/part3-conf-hive-shuff-8.webp" width="500" height="500"  /> </p>
@@ -45,6 +47,7 @@ it works… 
 <p align="center">     <img src="./images/part3-conf-hive-shuff-10.webp" width="500" height="500"  /> </p>
 then press plus button for details
 <p align="center">     <img src="./images/part3-conf-hive-shuff-11.webp" width="500" height="500"  /> </p>
+
 ### the next work flow automation
 1- mimkatz alert sent to shuffle.
 2- shffle receives mimikatz alert.
@@ -79,16 +82,21 @@ you will see malicious : 62
 <p align="center">     <img src="./images/part3-conf-hive-shuff-23.webp" width="500" height="500"  /> </p>
 then search for thehive in the apps search bar then grap it to the workflow
 <p align="center">     <img src="./images/part3-conf-hive-shuff-24.webp" width="500" height="500"  /> </p>
-in the hive machine:
+
+### in the hive machine:
+
 **http://ip:9000**
+
 #### default credential:
+
 ```
 username: admin@thehive.local
 pass: secret
 ```
-**But we need to be online so we can communicate with shuffle cloud So we will use ngrok
-**
-https://ngrok.com/
+
+**But we need to be online so we can communicate with shuffle cloud So we will use ngrok**
+
+[https://ngrok.com/]
 
 After you sign up you should follow the steps to create your own HTTPS
 after I 've done that 
@@ -124,6 +132,7 @@ now go back to the shuffle 
 connect the hive with virustotal
 <p align="center">     <img src="./images/part3-conf-hive-shuff-39.webp" width="500" height="500"  /> </p>
 put the data , you want in the hive like this:
+
 ```
 Description: $exec.text.win.eventdata.description
 flag: false
