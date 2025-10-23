@@ -1,4 +1,4 @@
-# Install Shuffle.io in windows
+# Install Shuffle.io in windows using Docker
 
 1- Make sure you have Docker and git(for downloading) installed, and that you have a minimum of 4Gb of RAM available. More RAM = better.
 
