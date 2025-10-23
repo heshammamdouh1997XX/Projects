@@ -6,7 +6,7 @@ then we will make wazuh server to take all logs so we can analysis them. and waz
 ## On the windows agent:
 open windows search bar >windows security>virus & threat protection
 under virus & threat protection go to exclusions (add or remove exclusions) 
-<p align="center">     <img src="./images/part2-telemetry-1.webp" width="500" height="500" /> </p>
+<p align="center">     <img src="./images/part2-telemetry-1.webp" width="500" height="500"  /> </p>
 if you couldn't find it >> then go to manage settings
 <p align="center">     <img src="./images/part2-telemetry-2.webp" width="500" height="500" /> </p>
 go down you will find it.
