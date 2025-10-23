@@ -45,6 +45,14 @@ then go down till you see sysmon open the file and click left-click then choose 
 <p align="center">     <img src="./images/part2-telemetry-14.webp" width="500" height="500" /> </p>
 so the ossec.conf file should be like that 
 <p align="center">     <img src="./images/part2-telemetry-15.webp" width="500" height="500" /> </p>
+
+```
+  <localfile>
+    <location>Microsoft-Windows-Sysmon/Operational</location>
+    <log_format>eventchannel</log_format>
+  </localfile>
+```
+
 save and restart the service from services.
 
 ---
