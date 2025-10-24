@@ -8,5 +8,6 @@ When Wazuh detects a malware alert, it automatically sends the event to TheHive 
 
 
 ## Parts
-- Part 1 :Setup the Environment
-- 
+- Part 1 : Setup the Environment
+- Part 2 : Generate telemetry and ingest into wazuh
+- Part 3 : configuring the hive and shuffle
