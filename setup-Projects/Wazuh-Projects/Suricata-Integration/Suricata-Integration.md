@@ -27,21 +27,53 @@ sudo systemctl stop suricata
 `sudo nano /etc/suricata/suricata.yaml`
 
 ### configure the ip address
+
+- change the IP address of Home Net. 
 <p align="center">
     <img src="./images/config-1.png" width="750" height="750" />
 </p>
 
+Also at af-packet , pcap:
+- Choose the right interface.
+- Make sure the cluster-ID is Unique.
+- Make `community-it: true`  #important with zeek intigeration
+
+(optionl): you can add custom rules.
+
+**Testing the Configuration**
+
+`sudo suricata -T -c /etc/suricata/suricata.yaml -v`
+
+**Run in the background** 
+
+`sudo suricata -D`
+
+**The location of the logs**
+
+/var/logs/suricata
+
+ Testing the Suricata in Other Framework
+---
+https://github.com/3CORESec/testmynids.org
+
+`curl http://testmynids.org/uid/index.html`
+
 
 
 ## Signatures
-`sudo suricata-update`
+```
+sudo suricata-update
 
+sudo suricata-update list-sources //to see the list of sources for the rules updates
 
+sudo suricata-update enable-source 'the-name-of-the-source'
+```
 
 ## Upgrading Suricata
+```
 sudo apt-get update
 sudo apt-get upgrade suricata
-
+```
 ## Getting Debug or Pre-release Versions
 `sudo apt-get install suricata-dbg`
 
