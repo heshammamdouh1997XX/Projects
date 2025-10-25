@@ -31,4 +31,7 @@ When you're done, go to the After installation step below.
 - Sign in with the same Username & Password! Go to /apps and see if you have any apps yet. If not - you may need to configure proxies
 -  Check out https://shuffler.io/docs/configuration as it has a lot of useful information to get started
     
+   ## Production Setup
    
+
+   https://shuffler.io/docs/configuration#production_readiness
