@@ -5,8 +5,16 @@ You need to Download those 2 files in the directory `/var/ossec/integrations` th
 - Download custom-n8n -> to connect wazuh with the python code (custom-n8n.py).
 
 - Download custom-n8n.py -> to send the information from wazuh to n8n server.
+```
+sudo chown root:wazuh custom-n8n.py
+sudo chmod 750 custom-n8n.py
 
--Restart the wazuh Manager.
+sudo chown root:wazuh custom-n8n
+sudo chmod 750 custom-n8n
+```
+  
+
+- Restart the wazuh Manager.
 
 ## at n8n:
 Use the webHook and make it testing for the POST request.
@@ -19,6 +27,7 @@ take the URL and put it in the Integration Area <hook_url>
     <name>custom-n8n</name>
     <hook_url>https://<username>.app.n8n.cloud/webhook-test/<id></hook_url>  
     <rule_id>100002</rule_id>
+    <level> 3 </level>
     <alert_format>json</alert_format>
   </integration>
 
