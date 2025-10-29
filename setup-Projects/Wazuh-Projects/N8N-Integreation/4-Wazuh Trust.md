@@ -11,3 +11,7 @@
  `sudo update-ca-certificates`
 3. Restart Wazuh manager to refresh its environment:
    `sudo systemctl restart wazuh-manager`
+
+**Then verify it’s trusted:**
+
+`openssl verify -CAfile /etc/ssl/certs/ca-certificates.crt mycompany-rootCA.crt`
