@@ -18,3 +18,13 @@
 
 ### Troubleshoot
 `grep -R shuffle /var/ossec/logs/`
+
+ ## Related documentation:
+
+    https://documentation.wazuh.com/current/user-manual/manager/manual-integration.html
+
+    https://documentation.wazuh.com/current/user-manual/api/reference.html
+
+    https://documentation.wazuh.com/current/user-manual/capabilities/active-response/custom-active-response-scripts.html
+
+    https://wazuh.com/blog/how-to-integrate-external-software-using-integrator/
