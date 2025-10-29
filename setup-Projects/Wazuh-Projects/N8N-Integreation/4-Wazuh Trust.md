@@ -15,3 +15,6 @@
 **Then verify it’s trusted:**
 
 `openssl verify -CAfile /etc/ssl/certs/ca-certificates.crt mycompany-rootCA.crt`
+
+### Troubleshoot
+`grep -R shuffle /var/ossec/logs/`
